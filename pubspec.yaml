@@ -1,0 +1,29 @@
+name: multi_provider_integration
+description: Integration of multiple LLM providers with MCP ecosystem
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # MCP ecosystem packages
+  mcp_llm: ^0.2.2
+  mcp_client: ^0.1.7
+
+  # UI and utilities
+  flutter_dotenv: ^5.0.2
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
